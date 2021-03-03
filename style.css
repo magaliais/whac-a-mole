@@ -1,0 +1,96 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* font-family: "Stick"; */
+  font-family: "DotGothic16";
+  /* font-family: "Roboto Mono"; */
+}
+
+header {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  margin-bottom: 5rem;
+}
+
+.score-box, .time-box {
+  display: flex;
+}
+
+#score, #time-left {
+  margin-left: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+
+  justify-content: center;
+  justify-items: center;
+
+  max-width: 800px;
+}
+
+.hole {
+  width: 200px;
+  height: 200px;
+
+  border-style: solid;
+  border-color: black;
+
+}
+
+.mole {
+  background-color: red;
+  background-size: cover;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+
+  margin-bottom: 5rem;
+}
+
+button#start {
+  padding: 1rem 2rem;
+  
+  border: none;
+  border-radius: 0px;
+  
+  background-color: #ccc;
+  
+  font-family: "DotGothic16";
+}
+
+button#reset {
+  padding: 1rem 2rem;
+  
+  border: none;
+  border-radius: 0px;
+  
+  background-color: #ccc;
+  
+  font-family: "DotGothic16";
+
+  margin-right: 2rem;
+}
+
+button#start:hover {
+  transform: scale(1.15, 1.15);
+  transition: 0.2s;
+  cursor: pointer;
+}
