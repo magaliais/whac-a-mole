@@ -19,18 +19,19 @@ function randomHole() {
 }
 
 // score count
-hole.forEach(id => {s
+hole.forEach(id => {
   id.addEventListener("mouseup", () => {
     if(id.id === hitPosition) {
       result += 1
       score.textContent = result
+      console.log(score)
     }
   })
 })
 
 function moveMole() {
   let timeId = null;
-  timerId = setInterval(randomHole, 500)
+  timerId = setInterval(randomHole, 1000)
 }
 
 function countDown() {
@@ -43,7 +44,11 @@ function countDown() {
   }
 }
 
-function start() {
+function startGame() {
   let timerId = setInterval(countDown, 1000)
   moveMole()
+}
+
+function stopGame() {
+
 }
