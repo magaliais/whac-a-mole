@@ -6,6 +6,12 @@ let score = document.querySelector("#score");
 let result = 0;
 let currentTime = timeLeft.textContent;
 
+const startButton = document.querySelector("#start")
+startButton.addEventListener("click", startGame)
+
+const resetButton = document.querySelector("#reset")
+resetButton.addEventListener("click", resetGame)
+
 function randomHole() {
   hole.forEach(className => {
     className.classList.remove('mole')
@@ -38,8 +44,13 @@ function countDown() {
   currentTime--
   timeLeft.textContent = currentTime
   
+  console.log(currentTime)
   if(currentTime == 0) {
-    clearInterval(timeId)
+
+    console.log("entrei")
+
+    clearInterval(timerId)
+    resetGame()
     alert(`Game Over! Your final score is ${ result }`)
   }
 }
@@ -49,6 +60,6 @@ function startGame() {
   moveMole()
 }
 
-function stopGame() {
-
+function resetGame() {
+  location.reload();
 }

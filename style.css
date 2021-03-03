@@ -50,8 +50,7 @@ main {
   width: 8rem;
   height: 8rem;
 
-  border-style: solid;
-  border-color: black;
+  
   border-radius: 99px;
 
   background-image: url("./public/hole.png");
@@ -62,7 +61,7 @@ main {
 }
 
 .mole {
-  background-image: url("./public/hole.png");
+  background-image: url("./public/mole.png");
   background-repeat: no-repeat;
   background-position-y: 2rem;
   background-position-x: 1rem;
@@ -80,7 +79,8 @@ button#start {
   border: none;
   border-radius: 0px;
   
-  background-color: #ccc;
+  color: #fff;
+  background-color: #03540B;
   
   font-family: "DotGothic16";
 
@@ -93,7 +93,8 @@ button#reset {
   border: none;
   border-radius: 0px;
   
-  background-color: #ccc;
+  color: #fff;
+  background-color: #B52025;
   
   font-family: "DotGothic16";
 
@@ -101,6 +102,12 @@ button#reset {
 }
 
 button#start:hover {
+  transform: scale(1.15, 1.15);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+button#reset:hover {
   transform: scale(1.15, 1.15);
   transition: 0.2s;
   cursor: pointer;
