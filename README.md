@@ -14,6 +14,14 @@
 
 <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;<strong>Whac-a-mole</strong> is an arcade game invented in 1975 and licensed to Bandai in 1977. The idea is that the player hit a mole as many times as possible until the times runs out. The mole apears in one of the several holes randomly.
+&nbsp;&nbsp;&nbsp;&nbsp;<strong>Whac-a-mole</strong> is an arcade game invented in 1975 and licensed to Bandai in 1977. The idea is that the player hits the mole as many times as possible before the times runs out. The mole apears randomly in one of the several holes.
 
 <br>
+
+---
+
+<h2>Preview</h2>
+
+<h2 align="center">
+    <img src="./public/prev.png">
+</h2>
