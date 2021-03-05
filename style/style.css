@@ -67,10 +67,20 @@ main {
   background-position-x: 1rem;
 }
 
+footer {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-evenly;
+
+  margin-right: 28vw;
+  margin-bottom: 2rem;
+}
+
 .buttons {
   display: flex;
   justify-content: center;
-
+  align-items: center;
 }
 
 button#start {
@@ -87,6 +97,17 @@ button#start {
   margin-right: 1rem;
 }
 
+button#start:hover:enabled {
+  transform: scale(1.15, 1.15);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+button#start:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 button#reset {
   padding: 1rem 2rem;
   
@@ -99,12 +120,6 @@ button#reset {
   font-family: "DotGothic16";
 
   margin-left: 1rem;
-}
-
-button#start:hover {
-  transform: scale(1.15, 1.15);
-  transition: 0.2s;
-  cursor: pointer;
 }
 
 button#reset:hover {

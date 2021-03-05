@@ -22,6 +22,18 @@
 
 <h2>Preview</h2>
 
+<br>
+
+* First prototype
+
 <h2 align="center">
     <img src="./public/prev.png">
+</h2>
+
+<br>
+
+* Difficulty levels and Start Button disabled
+
+<h2 align="center">
+    <img src="./public/prev-v2.png">
 </h2>
