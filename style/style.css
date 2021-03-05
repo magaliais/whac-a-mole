@@ -53,7 +53,7 @@ main {
   
   border-radius: 99px;
 
-  background-image: url("./public/hole.png");
+  background-image: url("../public/hole.png");
   background-repeat: no-repeat;
   background-position-y: 2rem;
   background-position-x: 1rem;
@@ -61,7 +61,7 @@ main {
 }
 
 .mole {
-  background-image: url("./public/mole.png");
+  background-image: url("../public/mole.png");
   background-repeat: no-repeat;
   background-position-y: 2rem;
   background-position-x: 1rem;
